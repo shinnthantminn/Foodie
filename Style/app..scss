@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Padauk:wght@400;700&display=swap');
+
+$font-family-sans-serif:'Montserrat', sans-serif,'Padauk', sans-serif;
+$primary:Green;
+$warning:#ac3f21;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*CSS for Own*/
+
+.logo{
+  width: 40px;
+  height: 40px;
+}
+
+.services-svg{
+  width: 65px;
+  height: 65px;
+  fill: $primary;
+}
+
+.forZ{
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px) contrast(130%) !important;
+  z-index: 1;
+}
+
+.social{
+  width: 20px;
+  height: 20px;
+}
+
+.toTop{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.forInnerModal{
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(20px) contrast(130%) !important;
+}
+
+@include media-breakpoint-up(lg) {
+  .home{
+    min-height: 100vh;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .home{
+    min-height: 100vh;
+  }
+}
